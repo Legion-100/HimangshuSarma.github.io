@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">                                                           
+    <head>                                                        
+        <meta charset="UTF-8"/>                                                     
+        <meta http-equiv="X-UA-compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Portfolio/Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <span class="ok">MY PORTFOLIO</span>
+        </header>
+        <main>
+            <section>
+                <h4><b style="background-color: darkgrey;">NAME</b> : HIMANGSHU SARMA</h4>
+                <h4><b style="background-color: darkgrey;">EDUCATION</b> : NIT SILCHAR(ECE) | KV NFR MALIGAON(SCIENCE) | CAMBRIDGE PUBLIC SCHOOL</h4>  
+                <h4><b style="background-color: darkgrey;">EXPERIENCE</b> : NONE AS OF NOW | LEARNING WEB DEVELOPMENT</h4> 
+            </section>  
+            <br/>   
+            <hr>
+            <pre>
+                                                                                                                                                                                                      <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google</a></pre>                                                                                  
+            <aside><pre>                                                                                                                                                                                                   This is an ad</pre></aside>
+ 
+            <hr>
+            <ul class="ok1">    <br><br>
+                <li>APPLE</li>
+                <ol type="I">
+                    <li>Colour : Red</li>
+                    <li>Season : 12 Months around</li>
+                </ol>
+                <li>MANGO</li>
+                <ol type="I">
+                    <li>Color : Yellow</li>
+                    <li>Season : Summer</li>
+                </ol>
+            </ul>
+            <hr>
+            <table>
+                <thead>
+                    <caption>
+                        <h3><span style="background-color: darkgrey;">Table For Student Data </span></h3>                               <!-- caption is used to name the table-->
+                    </caption>
+                    <tr class="a">
+                        <th>Name</th>
+                        <th>Roll No.</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="b">
+                        <td>Khushi Bajaj</td>
+                        <td>51</td>
+                        <td>690</td>
+                    </tr>
+                    <tr class="c">
+                        <td>Tarush Tandon</td>
+                        <td>59</td>
+                        <td>869</td>
+                    </tr>                    
+                    <tr class="d">
+                        <td>Hemant Ganja</td>
+                        <td>55</td>
+                        <td>700</td>
+                    </tr>                    
+                </tbody>
+                <tfoot>
+                    <tr class="e">
+                        <th rowspan="2">Total</th>
+                        <th colspan="2">2259</th>
+                        
+                    </tr>
+                </tfoot>
+            </table>
+            <br/>    <hr>   <br>                                                                                                   <!--label id is used for like if we have to tick an option we can just select the writings and it will get ticked -->
+                                                                                                            
+            <form action="/action.php">
+            <fieldset>
+                <h3><span style="background-color: darkgrey;">Please fill your registration form</span> :</h3>
+                <br/>
+                <span><u>User-id/Handle</u> : </span><input type="text" placeholder="Type your name" required>       <br/><br/>          
+                <span><u>Password</u> : </span><input type="password" placeholder="Password" required>     <br/>     
+                <p><span><u>Gender</u> : </span></p>
+                <label for="98">
+                    <input type="radio" value="Male" name="Gender" id="98" required>Male         <br>
+                </label>
+                <label for="99">
+                    <input type="radio" value="Female" name="Gender" id="99" required>Female         <br>
+                </label>
+                <label for="100">
+                    <input type="radio" value="Other" name="Gender" id="100" required>Other         <br>
+                </label>        <br>
+                <span><u>Date Of Birth</u> :</span>     <br><br>
+                <input type="date" name="dob" id="dob" required>     <br><br>
+                <span><u>Address</u> :</span>   <br><br>
+                <textarea id="3" name="address" placeholder="Please provide yoour address" rows="3" cols="60"></textarea>
+                <p><u>Select your semester</u> :</p>    
+                <label for="101">
+                    <input type="radio" value="Semester 1" name="Sem" id="101" required>Semester 1        <br/>
+                </label>      
+                <label  for="102">
+                    <input type="radio" value="Semester 2" name="Sem" id="102" required>Semester 2        <br/>
+                </label>                                                                     
+                <label for="103">
+                    <input type="radio" value="Semester 3" name="Sem" id="103" required>Semester 3        <br/>
+                </label>                       
+                <label for="104">
+                    <input type="radio" value="Semester 4" name="Sem" id="104" required>Semester 4        <br/>
+                </label>    
+                <p><u>Select your favourite subjects</u> :</p>   
+                <label for="201">
+                    <input type="checkbox" value="Math" name="subject" id="201">math        <br/>
+                </label>
+                <label for="202">
+                    <input type="checkbox" value="Physics" name="subject" id="202">Physics      <br/>
+                </label>
+                <label for="203">
+                    <input type="checkbox" value="Chemistry" name="subject" id="203">Chemistry      <br/>
+                </label>    <br/>
+                <span>
+                    <u>Select your city</u> : 
+                </span>
+                <select name="city">
+                    <option value="">--Select a city--</option>
+                    <option value="Delhi" required>Delhi</option>
+                    <option value="Guwahati" required>Guwahati</option>
+                    <option value="Mumbai" required>Mumbai</option>
+                    <option value="Pune" required>Pune</option>
+                    <option value="Bangalore" required>Bangalore</option>
+                </select>   
+                <br/>   <br/>
+                <textarea name="feedback" id="600" placeholder="Please give your feedback" rows="5" cols="60"></textarea>
+                <br>
+                <span><u>Contact e-mail</u> : </span>    
+                <br><br>
+                <input type="email" name="email" id="email" required>
+                <br><br>
+                <span><u>Pincode</u> : </span>
+                <br><br>
+                <input type="number" name="pincode" id="pincode" required>
+                <br/><br>
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+                <br/>
+
+                <!-- <video width="800" height="600" src="cnsbc.mov" controls loop autoplay></video>    -->
+                
+            </fieldset>
+            </form>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/037Sg5BjWWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        </main>
+        <footer>
+            <pre>                                                                                                                                                                                               <img src="1.jpg" target="_main" alt="Asus Laptop" height="80"></pre>
+        </footer>
+    </body>
+</html>
